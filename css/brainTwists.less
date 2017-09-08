@@ -1,0 +1,351 @@
+@r:50rem;
+*{margin: 0;padding: 0}
+body{
+  background: #7bc3ef;
+}
+ .clearfix{
+  zoom:1;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap{
+  position: relative;
+  margin: 0 auto;
+}
+#header img{
+  /*width: 734/@r;
+  height: 450/@r;*/
+  width: 100%;
+}
+#main{
+  margin: 60/@r auto 0;
+  width:708/@r ;
+  height: 318/@r;
+  background: url("../images/brainTwists-title.png");
+  background-size:708/@r 318/@r;
+
+}
+
+#main h2{
+  font-size: 34/@r;
+  color: #333;
+  font-weight: 400;
+  padding: 60/@r 40/@r 0;
+  line-height: 1.8;
+}
+#content{
+ margin: 60/@r 0 80/@r;
+}
+#answer{
+  height: 120/@r;
+  line-height: 120/@r;
+  margin-top: 20/@r;
+}
+.answerL{
+  float: left;
+  vertical-align: middle;
+  margin-left: 30/@r;
+}
+.answerL p{
+  font-size: 40/@r;
+  color: #fff;
+  position: relative;
+}
+.answerL span{
+  display: inline-block;
+  width: 80/@r;
+  height: 74/@r;
+  line-height: 74/@r;
+  background: url("../images/answer.png");
+  background-size: 80/@r 74/@r;
+  margin-left: 20/@r;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.rightTick{
+  display: none;
+  position: absolute;
+  right: -40/@r;
+  bottom: 10/@r;
+  width: 60/@r;
+  height: 48/@r;
+  background: url("../images/tick.png")no-repeat;
+  background-size: 60/@r 48/@r;
+}
+.errorTick{
+  display: none;
+  position: absolute;
+  right: -30/@r;
+  bottom: 4/@r;
+  width: 50/@r;
+  height: 60/@r;
+  background: url("../images/errorTick.png")no-repeat;
+  background-size: 50/@r 60/@r;
+
+}
+.answerR{
+  float: right;
+  margin-right: 30/@r;
+}
+.look{
+  display: inline-block;
+  width: 44/@r;
+  height: 44/@r;
+  background: url("../images/brainTwists-look.png")no-repeat;
+  background-size:44/@r 44/@r ;
+}
+.share{
+  display: inline-block;
+  width:29/@r;
+  height: 40/@r;
+  background: url("../images/brainTwists-share.png")no-repeat;
+  background-size:29/@r 40/@r ;
+}
+.options{
+ /* display: none*/
+ /* display: flex;
+  justify-content:center;*/
+}
+/*.option1,.option2{
+  text-align: center;
+  margin-top: 40/@r;
+}
+.option1 span, .option2 span{
+  display: inline-block;
+  width: 80/@r;
+  height: 74/@r;
+  line-height: 74/@r;
+  background: url("../images/textBox.png");
+  background-size: 80/@r 74/@r;
+  text-align: center;
+  font-size: 40/@r;
+  color: #333;
+  margin-right: 20/@r;
+}
+.option1 span:nth-of-type(1){
+  margin-left: 20/@r;
+}
+.option2 span:nth-of-type(1){
+  margin-left: 20/@r;
+}*/
+
+.options span{
+  float: left;
+  /*display: inline-block;*/
+  width: 80/@r;
+  height: 74/@r;
+  line-height: 74/@r;
+  background: url("../images/textBox.png");
+  background-size: 80/@r 74/@r;
+  text-align: center;
+  font-size: 40/@r;
+  color: #333;
+  margin: 40/@r 22/@r 0;
+}
+.options span:nth-of-type(1){
+  margin-left: 20/@r;
+}
+/*.options span:nth-of-type(){
+  margin-left: 20/@r;
+}*/
+.right{
+  display: none;
+  text-align: center;
+  margin-top: 20/@r;
+}
+.right h3{
+  font-size: 50/@r;
+  color: #fff;
+  font-weight: 400;
+}
+.right p{
+  color: #fcee21;
+  font-size: 30/@r;
+  margin: 30/@r 0;
+}
+.right p span{
+  display: inline-block;
+  width: 32/@r;
+  height: 34/@r;
+  background: url("../images/gold.png")no-repeat;
+  background-size: 32/@r 34/@r;
+  vertical-align: middle;
+}
+.right button {
+  display: block;
+  width: 200/@r;
+  height: 74/@r;
+  background: url("../images/textBtn.png") no-repeat;
+  background-size: 200/@r 74/@r;
+  font-size: 40/@r;
+  color: #fcee21;
+  border: none;
+  margin: 0 auto;
+}
+/*提示框*/
+.lookAnswer, .shareFrame{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300/@r;
+  margin-top: -191/@r;
+  width:600/@r ;
+  height: 383/@r;
+  background: url("../images/lookAnswer.png")no-repeat;
+  background-size: 600/@r 383/@r;
+  z-index: 9999;
+}
+ .hint{
+  position: absolute;
+  font-size: 36/@r;
+  color: #7bc4ef;
+  left: 264/@r;
+  top: 10/@r;
+}
+.tenG{
+  position: absolute;
+  font-size: 30/@r;
+  color:#7bc4ef;
+  top: 182/@r;
+  left: 108/@r;
+}
+.lookAnswer-sure, .share-sure{
+  position: absolute;
+  display: inline-block;
+  width: 274/@r;
+  height: 70/@r;
+  line-height: 70/@r;
+  font-size: 36/@r;
+  color: #7bc4ef;
+  left: 20/@r;
+  bottom: 4/@r;
+  text-align: center;
+}
+.lookAnswer-cancel, .share-cancel{
+  position: absolute;
+  display: inline-block;
+  width: 274/@r;
+  height: 70/@r;
+  line-height: 70/@r;
+  font-size: 36/@r;
+  color: #7bc4ef;
+  right: 20/@r;
+  bottom: 4/@r;
+  text-align: center;
+}
+
+/*购买框*/
+.buyGold{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300/@r;
+  margin-top: -336/@r;
+  width: 600/@r;
+  height: 673/@r;
+  background: url("../images/buyGold.png")no-repeat;
+  background-size: 600/@r 673/@r;
+  z-index: 9999;
+}
+.buyHint{
+  position: absolute;
+  font-size: 36/@r;
+  color: #7bc4ef;
+  left: 224/@r;
+  top: 14/@r;
+}
+.goldFrame:nth-of-type(1){
+  margin-top: 110/@r;
+}
+.goldFrame:nth-of-type(3){
+ margin-bottom: 1px;
+}
+.goldFrame{
+  width: 564/@r;
+  height: 136/@r;
+  line-height: 136/@r;
+  background: #d7edfa;
+ margin: 0 auto 28/@r;
+}
+.goldCount{
+  float: left;
+  margin-left: 30/@r;
+}
+.goldCount p{
+  font-size: 30/@r;
+  color: #7bc4ef;
+}
+.goldCount p span{
+  display: inline-block;
+  width: 51/@r;
+  height: 54/@r;
+  background: url("../images/bigGold.png")no-repeat;
+  background-size: 51/@r 54/@r;
+  vertical-align: middle;
+  margin-right: 20/@r;
+}
+.goldPrice{
+  float: right;
+  height: 136/@r;
+}
+.goldPrice span{
+  font-size: 30/@r;
+  color: #7bc4ef;
+}
+.goldPrice button{
+  width: 120/@r;
+  height: 70/@r;
+  border-radius: 15/@r;
+  border: 1px dashed  #7bc4ef;
+  background: #fff;
+  color: #7bc4ef;
+  font-size: 36/@r;
+  margin-right: 20/@r;
+  margin-left: 10/@r;
+}
+.back{
+  height: 100/@r;
+  line-height: 100/@r;
+  font-size: 36/@r;
+  color: #7bc4ef;
+  text-align: center;
+}
+#footer{
+  height: 76/@r;
+}
+.zhez{
+  display: none;
+  width:100%;
+  height: 100%;
+  background:#000;
+  opacity:.4;
+  filter: alpha(opacity=0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+/*按钮动画*/
+.nextQ {
+  z-index: 5;
+  animation: beat 1.2s ease-in-out infinite forwards;
+}
+@keyframes beat {
+  0%, 100% { transform: scale3d(1,1,1);}
+  15%, 45% { transform: scale3d(1.2,1.2,1); }
+  35% { transform: scale3d(1.1,1.1,1); }
+  65% { transform: scale3d(1,1,1); }
+}
+
+@keyframes beat-shadow {
+  0%, 100% { transform: scale3d(1,1,1);}
+  15%, 45% { transform: scale3d(1.05,1.05,1); }
+  30%, 60% { transform: scale3d(1,1,1); }
+}

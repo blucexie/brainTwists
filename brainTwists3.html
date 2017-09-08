@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+     <link rel="stylesheet" href="css/brainTwists3.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/brainTwists3.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var html = document.documentElement;
+            var hWidth = html.getBoundingClientRect().width;
+            html.style.fontSize=hWidth/15+'px';
+        })()
+    </script>
+</head>
+<body>
+<div class="zhez"></div>
+<div id="wrap">
+    <div id="headline">
+       <!-- <img src="images/packageTitle.png" alt="">-->
+        <h2>中国哪个地方的东西最不便宜？</h2>
+    </div>
+   <div id="content">
+        <div id="answer">
+            <div class="answerL">
+                <p><label>答案：</label><!--<span class="answer1"></span><span class="answer2"></span>--><i class="rightTick"></i><i class="errorTick"></i>
+                </p>
+            </div>
+            <div class="answerR">
+                <span class="look"></span>
+                <span class="share"></span>
+            </div>
+        </div>
+        <div id="options" class="options clearfix">
+
+        </div>
+        <div class="right" >
+            <h3>恭喜你，回答正确！</h3>
+            <p>获得1 <span></span> 奖励</p>
+            <button class="nextQ">下一题</button>
+        </div>
+    </div>
+    <!--提示框-->
+    <div class="lookAnswer" >
+        <p class="hint">提示</p>
+        <p class="tenG">查看答案要消耗10个金币哦~</p>
+        <span class="lookAnswer-sure">确定</span>
+        <span class="lookAnswer-cancel">取消</span>
+    </div>
+    <!--分享框-->
+    <div class="shareFrame" >
+        <p class="hint">提示</p>
+        <p class="tenG">分享一次即可得一个金币哦~</p>
+        <span class="share-sure">确定</span>
+        <span class="share-cancel">取消</span>
+    </div>
+    <!--购买框-->
+    <div class="buyGold">
+        <p class="buyHint">购买金币</p>
+        <div class="goldFrame">
+            <div class="goldCount">
+                <p><span></span>10个</p>
+            </div>
+            <div class="goldPrice">
+                <span>1元</span>
+                <button>购买</button>
+            </div>
+        </div>
+        <div class="goldFrame">
+            <div class="goldCount">
+                <p><span></span>10个</p>
+            </div>
+            <div class="goldPrice">
+                <span>1元</span>
+                <button>购买</button>
+            </div>
+        </div>
+        <div class="goldFrame">
+            <div class="goldCount">
+                <p><span></span>10个</p>
+            </div>
+            <div class="goldPrice">
+                <span>1元</span>
+                <button>购买</button>
+            </div>
+        </div>
+        <div class="back">返回</div>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

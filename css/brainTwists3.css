@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap {
+  overflow: hidden;
+  background: url("../images/brainTwists3-bg.png") no-repeat;
+  background-size: 100% 100% ;
+}
+#headline {
+  width: 13.88rem;
+  height: 9.58rem;
+  margin: 3.6rem auto 0;
+  background: url("../images/packageTitle.png") no-repeat;
+  background-size: 13.88rem 9.58rem;
+}
+#headline h2 {
+  font-size: 0.72rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 3rem 0.6rem 0;
+}
+#content {
+  margin: 1.2rem 0 0.76rem;
+}
+#answer {
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin-top: 0.4rem;
+}
+.answerL {
+  float: left;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+}
+.answerL p {
+  font-size: 0.8rem;
+  color: #333;
+  position: relative;
+}
+.answerL span {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.48rem;
+  line-height: 1.48rem;
+  background: url("../images/answer3.png");
+  background-size: 1.6rem 1.48rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  text-align: center;
+}
+.rightTick {
+  display: none;
+  position: absolute;
+  right: -0.8rem;
+  bottom: 0.2rem;
+  width: 1.2rem;
+  height: 0.96rem;
+  background: url("../images/tick2.png") no-repeat;
+  background-size: 1.2rem 0.96rem;
+}
+.errorTick {
+  display: none;
+  position: absolute;
+  right: -0.6rem;
+  bottom: 0.08rem;
+  width: 1rem;
+  height: 1.2rem;
+  background: url("../images/errorTick2.png") no-repeat;
+  background-size: 1rem 1.2rem;
+}
+.answerR {
+  float: right;
+  margin-right: 0.6rem;
+}
+.look {
+  display: inline-block;
+  width: 0.88rem;
+  height: 0.88rem;
+  background: url("../images/brainTwists3-look.png") no-repeat;
+  background-size: 0.88rem 0.88rem;
+}
+.share {
+  display: inline-block;
+  width: 0.58rem;
+  height: 0.8rem;
+  background: url("../images/brainTwists2-share.png") no-repeat;
+  background-size: 0.58rem 0.8rem;
+}
+.options {
+  /* display: none*/
+  /* display: flex;
+   justify-content:center;*/
+  padding-bottom: 2rem;
+}
+.options span {
+  float: left;
+  width: 1.6rem;
+  height: 1.48rem;
+  line-height: 1.48rem;
+  background: url("../images/answer3.png");
+  background-size: 1.6rem 1.48rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+  margin: 0.8rem 0.44rem 0;
+}
+.options span:nth-of-type(1) {
+  margin-left: 0.4rem;
+}
+.right {
+  display: none;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+.right h3 {
+  font-size: 1rem;
+  color: #2d2d2d;
+}
+.right p {
+  color: #2d2d2d;
+  font-size: 0.6rem;
+  margin: 0.6rem 0;
+  font-weight: bold;
+}
+.right p span {
+  display: inline-block;
+  width: 0.64rem;
+  height: 0.68rem;
+  background: url("../images/gold2.png") no-repeat;
+  background-size: 0.64rem 0.68rem;
+  vertical-align: middle;
+}
+.right button {
+  display: block;
+  width: 4rem;
+  height: 1.48rem;
+  background: url("../images/textBtn3.png") no-repeat;
+  background-size: 4rem 1.48rem;
+  font-size: 0.8rem;
+  color: #2d2d2d;
+  border: none;
+  margin: 0 auto;
+}
+/*提示框*/
+.lookAnswer,
+.shareFrame {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6rem;
+  margin-top: -3.82rem;
+  width: 12rem;
+  height: 7.66rem;
+  background: url("../images/lookAnswer3.png") no-repeat;
+  background-size: 12rem 7.66rem;
+  z-index: 9999;
+}
+.hint {
+  position: absolute;
+  font-size: 0.72rem;
+  color: #333;
+  left: 5.28rem;
+  top: 0.2rem;
+}
+.tenG {
+  position: absolute;
+  font-size: 0.6rem;
+  color: #333;
+  top: 3.64rem;
+  left: 2.16rem;
+}
+.lookAnswer-sure,
+.share-sure {
+  position: absolute;
+  display: inline-block;
+  width: 5.48rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.72rem;
+  color: #333;
+  left: 0.4rem;
+  bottom: 0.08rem;
+  text-align: center;
+}
+.lookAnswer-cancel,
+.share-cancel {
+  position: absolute;
+  display: inline-block;
+  width: 5.48rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.72rem;
+  color: #333;
+  right: 0.4rem;
+  bottom: 0.08rem;
+  text-align: center;
+}
+/*购买框*/
+.buyGold {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6rem;
+  margin-top: -6.72rem;
+  width: 12rem;
+  height: 13.46rem;
+  background: url("../images/buyGold3.png") no-repeat;
+  background-size: 12rem 13.46rem;
+  z-index: 9999;
+}
+.buyHint {
+  position: absolute;
+  font-size: 0.72rem;
+  color: #333;
+  left: 4.48rem;
+  top: 0.28rem;
+}
+.goldFrame:nth-of-type(1) {
+  margin-top: 2.2rem;
+}
+.goldFrame:nth-of-type(3) {
+  margin-bottom: 1px;
+}
+.goldFrame {
+  width: 11.28rem;
+  height: 2.72rem;
+  line-height: 2.72rem;
+  background: #fffcc9;
+  margin: 0 auto 0.56rem;
+}
+.goldCount {
+  float: left;
+  margin-left: 0.6rem;
+}
+.goldCount p {
+  font-size: 0.6rem;
+  color: #000;
+}
+.goldCount p span {
+  display: inline-block;
+  width: 1.02rem;
+  height: 1.08rem;
+  background: url("../images/bigGold3.png") no-repeat;
+  background-size: 1.02rem 1.08rem;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+.goldPrice {
+  float: right;
+  height: 2.72rem;
+}
+.goldPrice span {
+  font-size: 0.6rem;
+  color: #000;
+}
+.goldPrice button {
+  width: 2.4rem;
+  height: 1.4rem;
+  border-radius: 0.3rem;
+  border: 2px solid  #000;
+  background: #fff;
+  color: #2d2d2d;
+  font-size: 0.72rem;
+  margin-right: 0.4rem;
+  margin-left: 0.2rem;
+}
+.back {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.72rem;
+  color: #2d2d2d;
+  text-align: center;
+}
+#footer {
+  height: 1.52rem;
+}
+.zhez {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .4;
+  filter: alpha(opacity=0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+/*按钮动画*/
+.nextQ {
+  z-index: 5;
+  animation: beat 1.2s ease-in-out infinite forwards;
+}
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  15%,
+  45% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  35% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  65% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes beat-shadow {
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  15%,
+  45% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  30%,
+  60% {
+    transform: scale3d(1, 1, 1);
+  }
+}
